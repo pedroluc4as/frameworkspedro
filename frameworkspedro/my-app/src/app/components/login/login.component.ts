@@ -19,13 +19,14 @@ export class LoginComponent {
   login(){
     this.isError = true;
 
-    if(this.user == "beto" && this.pwd == "beto"){
+    if(this.user == "pedro" && this.pwd == "pedro"){
       this.isSuccess = true;
       this.isError = false;
+      this.router.navigate(['/dashboard']);
+
     } else {
       this.isError = true;
       this.isSuccess = false;
-      this.router.navigate(['/dashboard']);
 
     }    // user == "beto@beto.com" pwd="beto"
 
