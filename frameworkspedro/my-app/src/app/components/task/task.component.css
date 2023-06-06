@@ -1,25 +1,50 @@
 @import url(https://fonts.google.com/specimen/Cutive+Mono?category=Monospace);
 
 * {
-    font-family: "cutive-mono";
+    font-family:'Courier New', Courier, monospace;
     text-decoration: none;
 }
 
 .container {
     height: 100vh;
-    background: #f0edfe;
+    background-image: url(https://www.ifms.edu.br/noticias/elaine-cassiano-e-nomeada-reitora-pelos-proximos-quatro-anos/mat-ifms-2.png);
+    background-size: auto;
     margin: 0 auto;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .container .box{
-    background: rgb(65, 0, 65);
+    background: white;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 5px;
 }
 
-button {
-    color: red;
+.botao button {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(22, 117, 46);
+    color: white;
+    margin: 20px;
 }
 
+.container .box input{
+    padding: 10px;
+    width: 250px;
+    height: 20px;
+}

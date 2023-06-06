@@ -1,13 +1,56 @@
 <div class="container">
-<div class="box">  
-  <form>
-    <input type="text">Task
-    <input type="text" />Descrição <br />
-    <input type="text" />Responsável <br />
-    <input type="date" />Data de Início <br />
-    <input type="date" />Data de Término <br />
-    <input type="button" />Cancelar <br />
-    <input type="button" />Cadastrar
-  </form>
-</div>
+  <div class="box">
+    <h1>Formulário</h1>
+
+    <form class="form">
+      <label for="txtNome">Nome da Tarefa</label>
+      <input
+        type="text"
+        name=""
+        id="txtNome"
+        placeholder="Digite o nome da tarefa"
+        [formControl]="task"
+      />
+
+      <label for="txtDesc">Descrição</label>
+      <input
+        type="text"
+        name=""
+        id="txtDesc"
+        placeholder="Digite a descrição da tarefa"
+        [formControl]="descricacao"
+      />
+
+      <label for="txtResponsavel">Responsável</label>
+      <input
+        type="text"
+        name=""
+        id="txtResponsavel"
+        placeholder="Digite o nome do Responsável"
+        [formControl]="responsavel"
+      />
+
+      <label for="txtInicio">Data de Início</label>
+      <input
+        type="date"
+        name=""
+        id="txtInicio"
+        placeholder="Digite a descrição da tarefa"
+        [formControl]="dt_inicio"
+      />
+
+      <label for="txtFim">Data de Término</label>
+      <input
+        type="date"
+        name=""
+        id="txtFim"
+        placeholder="Digite a descrição da tarefa"
+        [formControl]="dt_fim"
+      />
+    </form>
+    <div class="botao">
+      <button (click)="addTask()">Cadastrar</button>
+      <button>Cancelar</button>
+    </div>
+  </div>
 </div>
