@@ -3,21 +3,22 @@
 * {
     font-family:'Courier New', Courier, monospace;
     text-decoration: none;
+    color: whitesmoke;
 }
 
 .container {
     height: 100vh;
-    background-image: url(https://www.ifms.edu.br/noticias/elaine-cassiano-e-nomeada-reitora-pelos-proximos-quatro-anos/mat-ifms-2.png);
+    background-image: url(https://wallpaperaccess.com/full/763110.jpg);
     background-size: auto;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
     flex-direction: column;
 }
 
 .container .box{
-    background: white;
+    background: transparent;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -30,6 +31,11 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 5px;
+    background: none;
+}
+.form input{
+    background: transparent;
+    border: none;
 }
 
 .botao button {
@@ -38,9 +44,14 @@
     margin-bottom: 20px;
     border-radius: 10px;
     border: none;
-    background-color:rgb(22, 117, 46);
+    background-color:blue;
     color: white;
     margin: 20px;
+}
+
+.botao :hover {
+        background-color: rgb(255, 0, 191);
+    color: rgb(255, 255, 255);
 }
 
 .container .box input{

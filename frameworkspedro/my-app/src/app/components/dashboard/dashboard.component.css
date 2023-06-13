@@ -232,11 +232,12 @@ h5 {
   margin-right: 15px;
 }
 
-.content .adm .task {
-  background: #deffe8;
+.content .adm .task .tasks {
+  background: #f7fbfd;
+  height: 100%;
 }
 
-.content .adm .team .title {
+.content .adm .title {
   background: #e5f7f0;
   display: flex;
   align-items: center;
@@ -244,12 +245,12 @@ h5 {
   border-radius: 5px;
 }
 
-.content .adm .team .title span {
+.content .adm .title span {
   font-size: 18px;
   font-weight: 600;
 }
 
-.content .adm .team .title .ball {
+.content .adm .title .ball {
   background: #43af74;
   border-radius: 50%;
   width: 30px;
@@ -260,7 +261,7 @@ h5 {
   margin: 0 15px 0 25px;
 }
 
-.content .adm .team .title .ball i {
+.content .adm .title .ball i {
   color: #fff;
   font-size: 22px;
 }

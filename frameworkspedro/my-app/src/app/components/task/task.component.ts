@@ -18,6 +18,12 @@ export class TaskComponent {
   dt_fim = new FormControl('')
 
   addTask(){
-    console.log(this.task);
+    console.log(this.task.value);
+    console.log(this.dt_fim.value);
+    console.log(this.dt_inicio.value);
+    console.log(this.responsavel.value);
+    console.log(this.descricacao.value);
   }
+  
+  removeTask() {}
 }
