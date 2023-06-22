@@ -266,6 +266,9 @@ h5 {
   font-size: 22px;
 }
 
+.content .adm .title .ball i{cursor: cell};
+
+
 .container .user {
   display: grid;
   grid-template-rows: 70px 180px 120px 1fr;

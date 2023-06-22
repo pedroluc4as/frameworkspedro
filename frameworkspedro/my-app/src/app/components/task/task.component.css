@@ -27,6 +27,7 @@
     height: 500px;
     border-radius: 15px;
 }
+
 .form {
     display: grid;
     grid-template-columns: 1fr 2fr;

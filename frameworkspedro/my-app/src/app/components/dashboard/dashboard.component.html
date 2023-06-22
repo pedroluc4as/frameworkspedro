@@ -149,7 +149,7 @@
       </div>
       <div class="task">
       <a routerlink="/task">
-        <div class="title">
+        <div class="title" (click)="addTask()">
           <div class="ball">
             <i class="bx bx-plus"></i>
           </div>
@@ -159,7 +159,18 @@
       </a>
 
         <div class="tasks">
+          <div class="tarefas">
+            <div *ngFor="let n of tasks">
+              <p style="color: rgb(255, 0, 0);">{{ n.nome }}</p>
+              <p style="color: rgb(138, 138, 25);">{{ n.responsavel }}</p>
+              <p style="color: yellow;">{{ n.descricao }}</p>
+              <p style="color: yellow;">{{ n.dt_inicio }}</p>
+              <p style="color: yellow;">{{ n.dt_fim }}</p>
+            </div>
 
+
+
+          </div>
         </div>
 
       </div>
